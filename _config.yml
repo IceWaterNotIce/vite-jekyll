@@ -33,7 +33,6 @@ includes_dir: src\includes
 plugins:
   - jekyll-feed
 
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -62,6 +61,9 @@ exclude:
   - tsconfig.vitest.json
   - vite.config.ts
   - vitest.config.ts
-  - index.html
-  - public
+  - package-lock.json
+  - README.md
 
+collections:
+  dist:
+    output: true
