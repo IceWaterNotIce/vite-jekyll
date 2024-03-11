@@ -9,15 +9,12 @@ export default defineConfig({
   plugins: [
     vue(),
     vueJsx(),
-
   ],
   root: 'src',
   build: {
-    outDir: '../dist',
+    outDir: '../_dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: 'src/index.html',
-      
       plugins: [
         del({ targets: "dist/*", hook: "generateBundle" }),
       ]
@@ -27,6 +24,5 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
 })
-    

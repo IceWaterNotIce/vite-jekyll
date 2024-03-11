@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import TheWelcome from '../components/TheWelcome.vue'
-import image_gallery from '../includes/image_gallery.html?raw'
+import Jekyll_Includes from '../components/Jekyll_Includes.vue'
 </script>
 
 <template>
   <main>
     <TheWelcome />
-    <div v-html="image_gallery"></div>
+    <Jekyll_Includes htmlUrl="/includes/image_gallery.html" />
   </main>
 </template>
